@@ -1,11 +1,12 @@
 <template>
-  <h1>{{$route.params.id}}</h1>
+  <h3>Current model: {{$route.params.id}}</h3>
+  <hr>
   <Renderer resize="window" orbit-ctrl>
-    <Camera :position="{ z: 10 }" />
-    <Scene background="#fff">
-      <AmbientLight :intensity="0.5" />
-      <PointLight :position="{ x: -450, y: 350, z: 100 }" intensity="4"/>
-      <GltfModel src="/models/scene.gltf"/>
+    <Camera :position="{ x: -2, y: 3, z: -4.5 }" />
+    <Scene background="#D7D7D7">
+      <AmbientLight :intensity="1.25" />
+      <PointLight :position="{ x: -450, y: 350, z: 100 }" intensity="2"/>
+      <GltfModel :src="'/models/' + $route.params.id + '.gltf'"/>
     </Scene>
   </Renderer>
 </template>

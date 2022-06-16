@@ -43,6 +43,8 @@
     display: inline-block;
     margin: 0.8em 1em 1em 1em;
     font-weight: bold;
+    position: relative;
+
   }
   .left{
     float:left;
@@ -56,4 +58,5 @@
     max-height: 200px;
 
   }
+
 </style>

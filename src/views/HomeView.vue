@@ -4,13 +4,13 @@
       <div class="row justify-content-md-center ">
         <div class="col-md-10 col-sm-12">
           <div class="card-columns">
-            <div class="card card-hover" v-for="number in numbers" :key="number">
+            <div class="card card-hover" v-for="item in models">
               <div class="card-body">
-                <router-link :to="'/model-' + number">
-                  <img class="card-img-top" src="../img/photo-1.jpg" alt="Card image cap">
+                <router-link :to="'/'+ item.model">
+                  <img class="card-img-top" src="../img/teddy_bear.jpeg" alt="Card image cap">
                   <div class="reveal ">
                     <div class="align-self-center">
-                      <p> {{number}}</p>
+                      <p> {{item.text}}</p>
                     </div>
                   </div>
                 </router-link>
@@ -29,7 +29,34 @@
     name: 'HomeView',
     data(){
       return {
-        numbers: 6
+        numbers: 6,
+        models: [
+          {
+            model: "model-1",
+            text: "Teddy bear"
+          },
+          {
+            model: "model-2",
+            text: "Teddy bear"
+          },
+          {
+            model: "model-3",
+            text: "Teddy bear"
+          },
+          {
+            model: "model-4",
+            text: "Teddy bear"
+          },
+          {
+            model: "model-5",
+            text: "Teddy bear"
+          },
+          {
+            model: "model-6",
+            text: "Teddy bear"
+          },
+
+        ]
       }
     }
   }
@@ -101,7 +128,8 @@
 
   .card-img,
   .card-img-top {
-
+    padding-top: 10px;
+    max-height: 20rem;
     height: 50%;
     border-radius : 10%;
   }
@@ -116,6 +144,7 @@
   }
   .card-body:hover {
     box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2), 0 10px 30px 0 rgba(0, 0, 0, 0.19);
+    background-color: #e8e8e8;
   }
 
 
