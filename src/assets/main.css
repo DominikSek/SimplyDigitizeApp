@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Reenie+Beanie&display=swap');
+
+body {
+    background-color: #ebeae9;
+    margin: 0;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+h2 {
+    line-height: 110%;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.button_container.active .top {
+    transform: translateY(9px) translateX(0) rotate(45deg);
+    background: #FFF;
+}
+
+.button_container.active .middle {
+    opacity: 0;
+    background: #FFF;
+}
+
+.button_container.active .bottom {
+    transform: translateY(-7px) translateX(0) rotate(-45deg);
+    background: #FFF;
+}
+
+.button_container span {
+    background: #fff;
+    border: none;
+    height: 2px;
+    width: 27px;
+    position: absolute;
+    transition: all .35s ease;
+    cursor: pointer;
+}
+
+.button_container .black {
+    background: #000;
+}
+
+.button_container span:nth-of-type(2) {
+    top: 8.3px;
+}
+
+.button_container span:nth-of-type(3) {
+    top: 16px;
+}
+
+
+
+.overlay.open li {
+    animation: fadeInRight .5s ease forwards;
+    animation-delay: .35s;
+}
+
+.overlay.open li:nth-of-type(2) {
+    animation-delay: .4s;
+}
+
+.overlay.open li:nth-of-type(3) {
+    animation-delay: .45s;
+}
+
+.overlay.open li:nth-of-type(4) {
+    animation-delay: .50s;
+}
+
+.overlay nav {
+    position: relative;
+    height: 20%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 50px;
+    font-family: 'Reenie Beanie', cursive;
+    font-weight: 400;
+    text-align: center;
+}
+
+.overlay ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+    height: 100%;
+}
+
+.overlay ul li {
+    display: block;
+    height: 25%;
+    height: calc(100% / 4);
+    min-height: 50px;
+    position: relative;
+    opacity: 0;
+}
+
+.overlay ul li a {
+    display: block;
+    position: relative;
+    color: #FFF;
+    text-decoration: none;
+    overflow: hidden;
+    transition: all .2s ease-in-out;
+}
+
+.overlay ul li a:hover:after,
+.overlay ul li a:focus:after,
+.overlay ul li a:active:after {
+    width: 100%;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.overlay ul li a:hover {
+    transform: scale(1.5);
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        left: 20%;
+    }
+    100% {
+        opacity: 1;
+        left: 0;
+    }
+}
+
+.navbar {
+    width: 100%;
+    z-index: 99;
+    height: 80%;
+
+    background-color: #bab9b8;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-content: center;
+}
+
+
+.navbar-brand {
+    padding-left: 0;
+    margin-top: 10px;
+    justify-content: center;
+
+}
+
+
+.navbar-img{
+    height: 75px;
+    width: 250px;
+
+    border: 3px solid #000000;
+    margin: 3px 4em 0 0;
+    padding: 15px 15px;
+
+
+}
+.navigation {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+}
+@media (max-width: 767px) {
+    .card-hover .reveal,
+    .card-hover:hover .reveal {
+        visibility: visible;
+        opacity: 1;
+        position: fixed;
+        width: 100%;
+        background-color: #ebeae9;
+        color: black;
+    }
+    .reveal p {
+        line-height: 125%;
+        font-size: 1.2rem;
+        text-align: left;
+        padding-top: 1rem;
+        border-radius: 20%;
+    }
+}
+
+
+
+.additional img {
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+
+
+.events h2 {
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
