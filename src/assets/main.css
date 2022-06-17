@@ -126,6 +126,7 @@ html, body {
     overflow-x: hidden;
 }
 
+
 .overlay ul li a:hover {
     transform: scale(1.5);
 }
@@ -141,12 +142,13 @@ html, body {
     }
 }
 
-.navbar {
+    .navbar {
     width: 100%;
     z-index: 99;
     height: 80%;
 
-    background-color: #bab9b8;
+    background: rgb(205,95,1);
+    background: linear-gradient(90deg, rgb(205, 95, 1) 0%, rgba(245,130,31,1) 35%, rgba(251,155,71,1) 100%);
     margin-bottom: 10px;
     justify-content: center;
     align-content: center;
@@ -165,9 +167,13 @@ html, body {
     height: 75px;
     width: 250px;
 
-    border: 3px solid #000000;
-    margin: 3px 4em 0 0;
+    margin: 3px 0 0 0;
     padding: 15px 15px;
+}
+
+h3{
+    background-color: rgba(205, 95, 1, 0.38);
+    padding: 1rem;
 }
 .navigation {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -192,19 +198,26 @@ html, body {
     .right{
         visibility: hidden;
     }
-    .navbar-img-fer{
-        visibility: hidden;
-    }
+
     .navbar-img{
-        max-height: 50px;
-        max-width: 150px;
+        max-height: 50%;
 
         border: 3px solid #000000;
-        position: center;
+        position: relative;
     }
-    .left{
-        visibility: hidden;
+    .navbar-img-fer{
+        max-width: 200px;
+        float: right
     }
+    .card-img-top{
+        width: 75%;
+        height: 75%;
+    }
+    .card-body{
+        margin-left: 50%;
+        position: center
+    }
+
 }
 @media (max-width: 1000px) {
 
@@ -212,19 +225,16 @@ html, body {
     .right{
         visibility: hidden;
     }
-    .navbar-img-fer{
-        visibility: hidden;
-    }
     .navbar-img{
         max-height: 50px;
         max-width: 150px;
 
         border: 3px solid #000000;
         position: center;
+        
     }
-    .left{
-        visibility: hidden;
-    }
+
+
 }
 
 

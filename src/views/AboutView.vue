@@ -1,6 +1,10 @@
 <template>
-  <h3>Current model: {{$route.params.id}}</h3>
+  <div class="box-content">
+    <h2>Prikaz 3D modela</h2>
+  </div>
+  <br>
   <hr>
+
   <Renderer resize="window" orbit-ctrl>
     <Camera :position="{ x: -2, y: 3, z: -4.5 }" />
     <Scene background="#D7D7D7">
@@ -17,3 +21,10 @@
     components: { AmbientLight, GltfModel, Camera, LambertMaterial, PointLight, Renderer, Scene,Box},
   };
 </script>
+
+<style>
+
+  h2{
+    margin: 0.5rem;
+  }
+</style>

@@ -1,8 +1,6 @@
 <template>
   <div class="scrollblock">
-    <div class="container-fluid pt-10">
-      <div class="row justify-content-md-center ">
-        <div class="col-md-10 col-sm-12">
+      <div class="row">
           <div class="card-columns">
             <div class="card card-hover" v-for="item in models">
               <div class="card-body">
@@ -17,11 +15,9 @@
               </div>
             </div>
           </div>
-        </div>
       </div>
-    </div>
   </div>
-  <h1> 3D Models </h1>
+
 </template>
 
 <script>
@@ -124,27 +120,28 @@
     border: 0;
     border-radius: 0;
 
+
   }
 
   .card-img,
   .card-img-top {
     padding-top: 10px;
     max-height: 20rem;
-    height: 50%;
     border-radius : 10%;
+    position: inherit;
   }
 
   .card-body {
     padding-bottom: 0;
-    background-color: white;
+    background-color: rgba(255, 244, 213, 0.25);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 10%;
-    justify-content: center
+    justify-content: center;
 
   }
   .card-body:hover {
     box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2), 0 10px 30px 0 rgba(0, 0, 0, 0.19);
-    background-color: #e8e8e8;
+    background-color: rgba(221, 221, 221, 0.69);
   }
 
 
@@ -171,9 +168,10 @@
 
   .reveal p {
     line-height: 100%;
-    font-size: 1rem;
+    font-size: 1.25rem;
     text-align: center;
-    border-radius: 10%
+    border-radius: 10%;
+      padding: 5px;
   }
 
   .card-hover .reveal {
@@ -190,9 +188,11 @@
     position: page;
     width: 100%;
     top: 0;
-    background-color: #323232;
+    background-color: #dc6e1f;
     color: white;
-    border-radius: 20px
+    border-radius: 20px;
+    margin: 0;
+
   }
 
 </style>
