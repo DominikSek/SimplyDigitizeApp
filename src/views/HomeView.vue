@@ -29,27 +29,27 @@
         models: [
           {
             model: "model-1",
-            text: "Teddy bear"
+            text: "Medvjedić Lovro"
           },
           {
             model: "model-2",
-            text: "Teddy bear"
+            text: "Morska kornjača Dominik"
           },
           {
             model: "model-3",
-            text: "Teddy bear"
+            text: "Jelen Jelena"
           },
           {
             model: "model-4",
-            text: "Teddy bear"
+            text: "Ljetni šeširić"
           },
           {
             model: "model-5",
-            text: "Teddy bear"
+            text: "Meduza Mirta"
           },
           {
             model: "model-6",
-            text: "Teddy bear"
+            text: "Medvjedić Matko"
           },
 
         ]
