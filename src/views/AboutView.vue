@@ -10,7 +10,7 @@
     <Scene background="#D7D7D7">
       <AmbientLight :intensity="0.75" />
       <PointLight :position="{ x: -450, y: 350, z: 100 }" intensity="1.25"/>
-      <GltfModel :src="'/models/' + $route.params.id + '.gltf'"/>
+      <GltfModel :src="'assets/models/' + $route.params.id + '.gltf'"/>
     </Scene>
   </Renderer>
 </template>
