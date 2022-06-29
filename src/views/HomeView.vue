@@ -5,7 +5,7 @@
             <div class="card card-hover" v-for="item in models">
               <div class="card-body">
                 <router-link :to="'/'+ item.model">
-                  <img class="card-img-top" src="../img/teddy_bear.jpeg" alt="Card image cap">
+                  <img class="card-img-top" :src="getImgUrl(item.model)" alt="Card image cap">
                   <div class="reveal ">
                     <div class="align-self-center">
                       <p> {{item.text}}</p>
@@ -20,7 +20,10 @@
 
 </template>
 
+
+
 <script>
+
   export default {
     name: 'HomeView',
     data(){
@@ -54,6 +57,12 @@
 
         ]
       }
+    },
+    methods: {
+        getImgUrl(myimg) {
+            var images = require.context('../img/', false, /\.jpg$/)
+            return images('./' + myimg + ".jpg")
+        }
     }
   }
 
