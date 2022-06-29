@@ -192,7 +192,6 @@
   .card-hover:hover .reveal {
     height: auto;
     visibility: visible;
-    opacity: 0.5;
     transition: opacity 1s ease;
     position: page;
     width: 100%;
