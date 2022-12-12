@@ -1,4 +1,5 @@
 # 3d-skener
+Simple webpage that allows display of 3D objects
 
 ## Project setup
 ```
@@ -15,5 +16,5 @@ npm run serve
 npm run build
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+All the models are placed into public/models directory
+The models use GLTF 3D format
